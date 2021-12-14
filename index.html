@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan Bootstrap</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header class="navbar-light bg-light fixed-top py-2 px-md-5 shadow-sm">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/caravan.svg" alt="caravan">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+              <ul class="navbar-nav pt-sm-4 pt-md-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-center text-md-start" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-center text-md-start" href="./local.html">California</a>
+                    <a class="dropdown-item text-center text-md-start" href="./local.html">Paris</a>
+                    <a class="dropdown-item text-center text-md-start" href="./local.html">Dublin</a>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" href="./planos.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" href="./contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" href="#">Login</a>
+                </li>
+                <li class="nav-item ms-md-2 text-center ">
+                  <a class="btn btn-warning text-dark w-100 my-3 my-md-0 font-monospace" href="./contato.html">Inscreva-se</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid p-0">
+      <section class="container-fluid">
+        <div class="row bg-dark text-light align-items-center">
+          <div class="col-lg-7 bg-light p-0">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active p-1" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="p-1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="p-1" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner text-uppercase display-3 fw-normal" >
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="./img/california.jpg" class="d-block w-100" alt="california">
+                  <div class="carousel-caption">
+                    <p>California</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./img/dublin.jpg" class="d-block w-100" alt="dublin">
+                  <div class="carousel-caption">
+                    <p>Dublin</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./img/paris.jpg" class="d-block w-100" alt="paris">
+                  <div class="carousel-caption">
+                    <p>Paris</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+          <div class="col-lg-5 py-5 px-md-5">
+            <h1 class="display-6 fw-normal">Realize a viagem do seu sonho</h1>
+            <p class="lead pt-2 pb-4">O melhor local para sua viagem é com a Caravan, mais de 5.000 excursões concluídas.</p>
+
+            <form action="">
+              <div class="input-group input-group pe-xxl-5">
+                <input type="text" class="form-control py-lg-3 py-sm-3 py-xs-1" placeholder="Seu melhor email" aria-label="Seu melhor email" aria-describedby="button-addon2">
+                <button class="btn btn-warning w-25 text-white font-monospace" type="button" id="button-addon2">Inscreva-se</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-section-02">
+        <div class="container text-center my-5">
+          <span class="h4 d-block">Tudo de melhor para você</span>
+          <h2 class="display-4 text-warning mb-5 pb-4">Aproveite as vantagens</h2>
+
+          <div class="row mt-5">
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/passaporte.svg" alt="Passaporte">
+              <h3>Documentos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/passagens.svg" alt="Passagens">
+              <h3>Passagens</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/translado.svg" alt="Translado">
+              <h3>Translado</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/praias.svg" alt="Praias">
+              <h3>Praias</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/bagagens.svg" alt="Bagagens">
+              <h3>Bagagens</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <img class="img-icons" src="./img/icones/turismo.svg" alt="Turismo">
+              <h3>Turismo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis consectetur necessitatibus impedit tempore excepturi harum voluptates perferendis provident accusamus.</p>
+            </div>
+          </div>
+            <a class="btn btn-warning mt-4 px-5 py-3 text-dark font-monospace" href=".planos.html">Comprar Plano</a>
+        </div>
+      </section>
+    </main>
+
+  <script src="./js/bootstrap.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

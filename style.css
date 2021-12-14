@@ -1,0 +1,32 @@
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+main {
+  height: 100vh;
+  margin-top: 76px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-behavior: smooth;
+}
+.dropdown-toggle::after {
+  vertical-align: middle;
+}
+.img-icons {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.dropdown-toggle::after,.dropdown-toggle.show::after {
+  transition: .2s ease;
+  color: #ffc107;
+}
+.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+.bg-section-02 {
+  background: rgb(233, 233, 233);
+}
