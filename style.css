@@ -1,11 +1,9 @@
 body {
-  max-height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 main {
-  height: 100vh;
-  margin-top: 76px;
-  overflow-y: scroll;
+  height: 100%;
+  margin-top: 76px 0 0 0;
   scroll-behavior: smooth;
 }
 section {
@@ -30,3 +28,72 @@ section {
 .bg-section-02 {
   background: rgb(233, 233, 233);
 }
+.blockquote-section {
+  width: 100%;
+  background: url('./img/bg-quote.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.blockquote-section-overlay {
+  background: rgba(0, 0, 0, 0.486);
+}
+button.accordion-button:focus {
+  border-color: #ffc105;
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 5,0.25);
+}
+button.accordion-button:not(.collapsed) {
+  color: #ffc105;
+  background-color: #fdf7e4;
+}
+.accordion-button::after {
+ display: none;
+}
+p.accordion-title{
+  font-size:1.5rem ;
+  letter-spacing: -1px;
+  margin: 0;
+}
+p.accordion-title:hover,.accordion-button:not(.collapsed) .accordion-title{
+  text-decoration: underline;
+}
+
+.accordion-button::before {
+  content: '🢤';
+  display: flex;
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+  transition: .3s linear;
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc105;
+  text-decoration: none;
+}
+.section-faq {
+  padding-top: 76px;
+  min-height: 100vh;
+  background: rgb(233, 233, 233);
+}
+
+button.accordion-button:not(.collapsed)::before {
+  transform: rotate(270deg) translate(0%,-50%);
+  transform-origin: center;
+}
+
+
+@media screen and (max-width:768px) {
+  .custom-blockquote{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:400px) {
+  .custom-blockquote{
+    font-size: 1.25rem;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
+
+
